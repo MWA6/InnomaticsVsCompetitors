@@ -72,8 +72,8 @@ def save_res():
     })
     df.to_excel('sorted_insta_data.xlsx', index=False)  # Saving to excel sheet
 
-
-get_insta_username(links)
-insta_usernames(insta_links)
-follower_count()
-save_res()
+if __name__ == "__main__":
+    get_insta_username(links)
+    insta_usernames(insta_links)
+    follower_count()
+    save_res()
